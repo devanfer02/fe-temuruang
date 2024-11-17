@@ -61,6 +61,7 @@
           <div class="card-body">
             <p><strong>Nama:</strong> Tade Gina</p>
             <p><strong>Email:</strong> tadegina@gmail.com</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Profil</button>
           </div>
         </div>
   
@@ -82,8 +83,35 @@
               <li><strong>Tanggal Pemesanan:</strong> 5 Oktober 2024</li>
               <li><strong>Status:</strong> Pembayaran Diterima</li>
             </ul>
-            <a href="booking_history.html" class="btn btn-warning text-white mt-3">Lihat Semua Pemesanan</a>
+            <a href="history.html" class="btn btn-warning text-white mt-3">Lihat Semua Pemesanan</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editProfileLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="editProfileLabel">Edit Profil</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Fullname</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" name="fullname">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Update</button>
+          </form>
         </div>
       </div>
     </div>
